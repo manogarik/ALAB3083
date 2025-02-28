@@ -17,3 +17,34 @@ for (let i =1;i <= 100; i++)
 
 }
 
+//part 2
+//prime time
+let n = 4;
+let isPrime = true;
+let i=2;
+while(isPrime)
+{
+    n++;
+    for(let i = 2; i <= n/2; i++)
+    {
+        if(n % i == 0)
+        {
+            isPrime = false;
+            break;
+        }
+    }
+   
+    if(isPrime == true)
+    {
+       console.log(n);
+        break;
+    }
+   
+    isPrime = true;
+    
+}
+
+//Part3 feeling loopy
+ 
+str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26" ;
+
